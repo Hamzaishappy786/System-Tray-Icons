@@ -17,7 +17,12 @@ Sometimes on boot, Windows' notification area (`explorer.exe`'s tray) fails to i
 1. **Auto-heal watchdog**: ~18 seconds after login, it checks whether the tray actually initialized. If not, it restarts `explorer.exe` automatically to bring your icons back.
 2. **Floating quick panel**: a small round bubble sits in the bottom-right corner. Click it (or press `Ctrl+Shift+T`) to open a lightweight panel with a manual tray-restart button, volume control, battery status, and quick-launch buttons for your apps.
 
-Built in Rust with raw Win32 bindings, no Electron, no .NET runtime. The whole thing is a ~330 KB binary using single-digit-to-low-teens MB of RAM.
+<div align="center">
+  <kbd>
+    <img src="https://img.shields.io/badge/BINARY%20SIZE-33%20KB-ff3e00?style=for-the-badge&logo=rust&logoColor=white" alt="33 KB" height="40">
+  </kbd>
+  <p><i>Pure native Rust. Zero Electron. Zero .NET. Just pure efficiency.</i></p>
+</div>
 
 ## Screenshot
 
